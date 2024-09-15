@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutUs.css'; 
+import './Aboutus.css'; 
 import Navbar from '../../components/Navbar/Navbar'
 import aboutUsImage from '../Aboutus/impimg.jpg'; 
 
