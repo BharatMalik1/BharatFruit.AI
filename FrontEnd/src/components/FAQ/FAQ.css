@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body-faq{
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding : 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6rem;
+}
+.heading{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer-content-left h1{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    color: black;
+}
+
+.accordian{
+    background-color: white;
+    padding: 20px 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgb(255,160,255);
+}
+
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.faq-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.faq-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.faq-form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: pink;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-form button:hover {
+  background-color: #ff9999;
+}
+
+.delete-update {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.delete-update li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.delete-update li strong {
+  font-size: 18px;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.delete-update li p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+.delete-update li button {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.delete-update li button:first-of-type {
+  background-color: #dc3545;
+}
+
+.delete-update li button:first-of-type:hover {
+  background-color: #c82333;
+}
+
+.delete-update li button:last-of-type {
+  background-color: #007bff;
+}
+
+.delete-update li button:last-of-type:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 600px) {
+  .faq-container {
+    padding: 10px;
+  }
+
+  .delete-update li {
+    padding: 10px;
+  }
+
+  .delete-update li button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+  
