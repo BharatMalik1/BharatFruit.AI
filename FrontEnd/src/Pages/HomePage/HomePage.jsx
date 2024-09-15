@@ -1,7 +1,7 @@
 import React , {useRef} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Card from '../../components/Card/Card';
-import chatbotImage from '../../assets/chatbot.jpg';
+import chatbotImage from '../../assets/Chatbot.jpg';
 import Faqimage from '../../assets/FAQ.jpg'
 import About from '../../assets/Aboutus.jpg'
 import Navbar from '../../components/Navbar/Navbar';
