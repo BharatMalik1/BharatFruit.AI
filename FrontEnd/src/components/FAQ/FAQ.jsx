@@ -9,7 +9,7 @@ const FAQ = () => {
   const [newFaq, setNewFaq] = useState({ question: '', answer: '' });
 
   useEffect(() => {
-    axios.get('http://localhost:4000/api/faqs')
+    axios.get('https://bharatfruit-ai-2.onrender.com/api/faqs')
       .then((response) => setFaqs(response.data))
       .catch((error) => console.error("There was an error fetching the FAQs!", error));
   }, []);
@@ -20,7 +20,7 @@ const FAQ = () => {
   };
 
   const addFaq = () => {
-    axios.post('http://localhost:4000/api/faqs', newFaq)
+    axios.post('https://bharatfruit-ai-2.onrender.com/api/faqs', newFaq)
       .then((response) => setFaqs([...faqs, response.data]))
       .catch((error) => console.error("Error adding FAQ", error));
   };
@@ -37,7 +37,7 @@ const FAQ = () => {
       answer: updatedAnswer
     };
 
-    axios.put(`http://localhost:4000/api/faqs/${id}`, updatedFaq)
+    axios.put(`https://bharatfruit-ai-2.onrender.com/api/faqs/${id}`, updatedFaq)
       .then((response) => {
         const updatedFaqs = faqs.map((faq) =>
           faq._id === id ? response.data : faq
@@ -48,7 +48,7 @@ const FAQ = () => {
   };
 
   const deleteFaq = (id) => {
-    axios.delete(`http://localhost:4000/api/faqs/${id}`)
+    axios.delete(`https://bharatfruit-ai-2.onrender.com/api/faqs/${id}`)
       .then(() => setFaqs(faqs.filter(faq => faq._id !== id)))
       .catch((error) => console.error("Error deleting FAQ", error));
   };
